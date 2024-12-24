@@ -1,0 +1,10 @@
+.link {
+  font-family: "playbold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color-dark-blue);
+
+  &.active {
+    color: var(--primary-color-blue);
+  }
+}

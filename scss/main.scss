@@ -1,11 +1,14 @@
 @import "./utils/_fonts";
 @import "./base/_reset";
-
-@import "./utils/_variables";
 @import "./base/_base";
 
+@import "./utils/_variables";
+@import "./utils/_utils";
+
 // comp
+@import "./components/_links";
 
 // layo
 @import "./layout/_container";
 @import "./layout/_header";
+@import "./layout/_hero-section";

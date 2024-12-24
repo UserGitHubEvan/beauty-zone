@@ -1,0 +1,63 @@
+.header {
+  padding-top: 30px;
+  backdrop-filter: blur(10px);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  &__menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 55px;
+  }
+
+  &__buttons {
+    flex-shrink: 0;
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  &__call {
+    width: 32px;
+    height: 32px;
+    background-image: url("../../images/button-icons/telephone-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__facebook {
+    width: 32px;
+    height: 32px;
+    background-image: url("../../images/button-icons/facebook-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__instagram {
+    width: 32px;
+    height: 32px;
+    background-image: url("../../images/button-icons/instagram-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+}
