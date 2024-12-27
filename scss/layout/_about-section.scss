@@ -1,0 +1,88 @@
+.about-section {
+  &__container {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__content {
+    flex-basis: 710px;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    font-family: "playbold", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 40px 0;
+    max-width: 530px;
+  }
+
+  &__text {
+    font-family: "robotoregular", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      right: 0;
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url("../images/about-section/middle-star/star-middle-blue.png");
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 335px;
+    height: 328px;
+    margin-bottom: 40px;
+
+    &:first-child {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: -120px;
+        width: 15px;
+        height: 15px;
+        display: block;
+        background-image: url("../images/about-section/smoll-star/star-small-white.png");
+      }
+    }
+
+    &:last-child {
+      display: flex;
+      align-self: self-end;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: -30px;
+        width: 56px;
+        height: 56px;
+        display: block;
+        background-image: url("../images/about-section/large-star/star-large-dark-blue.png");
+      }
+    }
+  }
+  &__image_before {
+    border-radius: 50%;
+  }
+
+  &__image_after {
+    border-radius: 50%;
+  }
+}

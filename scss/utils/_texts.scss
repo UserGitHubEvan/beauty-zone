@@ -1,0 +1,16 @@
+.text-brand {
+  font-family: "playbold", sans-serif;
+  text-transform: capitalize;
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--primary-color-blue);
+}
+
+.text-bold {
+  font-family: "robotomedium", sans-serif;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--primary-color-dark-blue);
+}

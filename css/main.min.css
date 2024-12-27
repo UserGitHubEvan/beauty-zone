@@ -198,6 +198,23 @@ img {
   --secondary-color-yellow: #ffd02b;
 }
 
+.text-brand {
+  font-family: "playbold", sans-serif;
+  text-transform: capitalize;
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--primary-color-blue);
+}
+
+.text-bold {
+  font-family: "robotomedium", sans-serif;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--primary-color-dark-blue);
+}
+
 .link {
   font-family: "playbold", sans-serif;
   font-size: 18px;
@@ -244,6 +261,7 @@ img {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
+  overflow: hidden;
 }
 
 .header {
@@ -296,14 +314,14 @@ img {
 }
 
 .hero-section {
-  background-image: linear-gradient(89.38deg, rgb(255, 255, 255) 10.62%, rgba(255, 255, 255, 0.850898) 20.31%, rgba(255, 255, 255, 0.193204) 29.65%, rgba(255, 255, 255, 0) 72.78%), url("../../images/hero-section/hero-section-bg.png");
+  background-image: linear-gradient(89.38deg, rgb(255, 255, 255) 10.62%, rgba(255, 255, 255, 0.850898) 20.31%, rgba(255, 255, 255, 0.193204) 29.65%, rgba(255, 255, 255, 0) 72.78%), url("../images/hero-section/hero-section-bg.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 70% 100%;
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2.0104166666666665), (min-resolution: 193dpi), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero-section {
-    background-image: linear-gradient(89.38deg, rgb(255, 255, 255) 10.62%, rgba(255, 255, 255, 0.850898) 20.31%, rgba(255, 255, 255, 0.193204) 29.65%, rgba(255, 255, 255, 0) 72.78%), url("../../images/hero-section/hero-section-bg@2x.png");
+    background-image: linear-gradient(89.38deg, rgb(255, 255, 255) 10.62%, rgba(255, 255, 255, 0.850898) 20.31%, rgba(255, 255, 255, 0.193204) 29.65%, rgba(255, 255, 255, 0) 72.78%), url("../images/hero-section/hero-section-bg@2x.png");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 74% 100%;
@@ -351,4 +369,93 @@ img {
   line-height: 1.5;
   color: var(--secondary-color-dark-gray);
   text-align: center;
+}
+
+.about-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.about-section__content {
+  -ms-flex-preferred-size: 710px;
+      flex-basis: 710px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.about-section__title {
+  font-family: "playbold", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  margin: 40px 0;
+  max-width: 530px;
+}
+.about-section__text {
+  font-family: "robotoregular", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+.about-section__list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.about-section__list::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  display: block;
+  background-image: url("../../images/about-section/middle-star/star-middle-blue.png");
+}
+.about-section__item {
+  position: relative;
+  width: 335px;
+  height: 328px;
+  margin-bottom: 40px;
+}
+.about-section__item:first-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -120px;
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-image: url("../../images/about-section/smoll-star/star-small-white.png");
+}
+.about-section__item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: self-end;
+      align-self: self-end;
+}
+.about-section__item:last-child::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 56px;
+  height: 56px;
+  display: block;
+  background-image: url("../../images/about-section/large-star/star-large-dark-blue.png");
+}
+.about-section__image_before {
+  border-radius: 50%;
+}
+.about-section__image_after {
+  border-radius: 50%;
 }/*# sourceMappingURL=main.min.css.map */
