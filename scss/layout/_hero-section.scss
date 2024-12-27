@@ -1,5 +1,77 @@
 .hero-section {
+  background-image: linear-gradient(
+      89.38deg,
+      rgb(255, 255, 255) 10.62%,
+      rgba(255, 255, 255, 0.850898) 20.31%,
+      rgba(255, 255, 255, 0.193204) 29.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url("../../images/hero-section/hero-section-bg.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 70% 100%;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 193dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        89.38deg,
+        rgb(255, 255, 255) 10.62%,
+        rgba(255, 255, 255, 0.850898) 20.31%,
+        rgba(255, 255, 255, 0.193204) 29.65%,
+        rgba(255, 255, 255, 0) 72.78%
+      ),
+      url("../../images/hero-section/hero-section-bg@2x.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 74% 100%;
+  }
+
   &__content {
     max-width: 530px;
+    padding: 125px 0;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-family: "playbold", sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--primary-color-blue);
+    margin-bottom: 40px;
+    text-transform: capitalize;
+  }
+
+  &__btn {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 32px;
+    background-color: var(--primary-color-blue);
+    border: 2px solid var(--primary-color-blue);
+    color: var(--primary-color-white);
+    margin-bottom: 15px;
+    transition: 1s background-color, 1s color;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--primary-color-dark-blue);
+      border-color: var(--primary-color-blue);
+    }
+  }
+
+  &__subtext {
+    max-width: 240px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--secondary-color-dark-gray);
+    text-align: center;
   }
 }
