@@ -1,9 +1,12 @@
 .text-brand {
   font-family: "playbold", sans-serif;
-  text-transform: capitalize;
   font-size: 64px;
   font-weight: 700;
   color: var(--primary-color-blue);
+}
+
+.text-capitalize {
+  text-transform: capitalize;
 }
 
 .text-bold {
