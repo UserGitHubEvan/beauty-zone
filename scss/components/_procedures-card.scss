@@ -1,0 +1,34 @@
+.procedures-card {
+  position: relative;
+  display: block;
+  height: 455px;
+  background: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    #011c44 101.39%
+  );
+  border-radius: 4px 120px 4px 120px;
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 4px 120px 4px 120px;
+  }
+
+  &__subtitle {
+    position: absolute;
+    bottom: 32px;
+    font-family: "robotoregular", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--primary-color-white);
+    max-width: 150px;
+    left: calc(50% - 75px);
+  }
+}

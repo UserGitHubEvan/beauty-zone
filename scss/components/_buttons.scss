@@ -30,3 +30,39 @@
     height: 32px;
   }
 }
+
+.carousel-btn {
+  position: absolute;
+  top: calc(50% + 44px);
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--primary-color-dark-blue);
+  border-radius: 50%;
+  z-index: 1;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 1s, fill 1s;
+
+  &:hover {
+    background-color: var(--primary-color-blue);
+    border-color: var(--primary-color-white);
+
+    .carousel-arrow {
+      fill: var(--primary-color-white);
+    }
+  }
+
+  &.prev {
+    left: -50px;
+  }
+
+  &.next {
+    transform: rotate(180deg);
+    right: -50px;
+  }
+
+  .carousel-arrow {
+    fill: var(--primary-color-dark-blue);
+  }
+}
