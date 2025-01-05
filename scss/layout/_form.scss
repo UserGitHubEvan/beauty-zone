@@ -1,0 +1,96 @@
+// .contacts-section {
+.form {
+  // background-color: var(--primary-color-dark-blue);
+  background-image: url("../../images/contacts-section/bg-contacts-section.png");
+  background-color: var(--primary-color-dark-blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1;
+  border-radius: 32px;
+  padding: 40px 60px;
+
+  &__title {
+    font-family: "robotomedium", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary-color-white);
+    max-width: 300px;
+    margin: 0 auto 30px;
+  }
+
+  &__brand {
+    color: var(--primary-color-blue);
+  }
+
+  &__field {
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    top: 23px;
+    left: 31px;
+    background-color: var(--primary-color-dark-blue);
+    transition: transform 0.3s;
+  }
+
+  &__input:focus + &__label {
+    transform: translateY(-30px);
+  }
+
+  &__label,
+  &__input {
+    color: var(--primary-color-white);
+    font-family: "robotoregular", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 20px 30px;
+    border: 2px solid var(--secondary-color-gray);
+    background-color: transparent;
+    border-radius: 32px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  &__btn {
+    font-family: "robotomedium", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 32px;
+    border: 2px solid transparent;
+    display: block;
+    margin: 0 auto 8px;
+    color: var(--primary-color-white);
+    background-color: var(--primary-color-blue);
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: transparent;
+      border-color: var(--primary-color-white);
+    }
+  }
+
+  &__subtext {
+    max-width: 215px;
+    font-family: "robotoregular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--secondary-color-gray);
+    margin: 0 auto;
+  }
+
+  &__privacy-policy {
+    text-decoration: underline;
+    color: var(--secondary-color-gray);
+  }
+}
+// }
