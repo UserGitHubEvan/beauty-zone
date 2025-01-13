@@ -4,30 +4,19 @@
   padding: 0;
   cursor: pointer;
 
-  &__call,
-  &__facebook,
-  &__instagram {
-    width: 32px;
-    height: 32px;
-    background-repeat: no-repeat;
-  }
-
-  &__call {
-    background-image: url("../images/button-icons/telephone-icon.svg");
-  }
-
-  &__facebook {
-    background-image: url("../images/button-icons/facebook-icon.svg");
-  }
-
-  &__instagram {
-    background-image: url("../images/button-icons/instagram-icon.svg");
-  }
-
   &__link {
     display: block;
     width: 32px;
     height: 32px;
+  }
+
+  .icon {
+    fill: var(--primary-color-dark-blue);
+    transition: fill 1s;
+
+    &:hover {
+      fill: var(--primary-color-white);
+    }
   }
 }
 

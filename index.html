@@ -23,26 +23,38 @@
               <li><a href="#about-section" class="link">Про нас</a></li>
               <li><a href="#why-us-section" class="link">Чому ми</a></li>
               <li><a href="#our-procedures" class="link">Наші процедури</a></li>
-              <li><a href="#" class="link">Контакти</a></li>
+              <li><a href="#contacts-section" class="link">Контакти</a></li>
             </ul>
           </nav>
           <div class="header__buttons button">
             <button type="button" class="button button__call">
-              <a class="button__link" href="tel:+380960000007"></a>
+              <a class="button__link" href="tel:+380960000007">
+                <svg width="32" height="32" class="icon icon-telephone">
+                  <use href="/images/icons.svg#icon-telephone"></use>
+                </svg>
+              </a>
             </button>
             <button type="button" class="button button__facebook">
               <a
                 class="button__link"
                 href="https://www.facebook.com/"
                 target="_blank"
-              ></a>
+              >
+                <svg width="32" height="32" class="icon icon-facebook">
+                  <use href="/images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </button>
             <button type="button" class="button button__instagram">
               <a
                 class="button__link"
                 href="https://www.instagram.com/"
                 target="_blank"
-              ></a>
+              >
+                <svg width="32" height="32" class="icon icon-instagram">
+                  <use href="/images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </button>
           </div>
         </div>
@@ -279,7 +291,7 @@
           </button>
         </div>
       </section>
-      <section class="contacts-section">
+      <section class="contacts-section" id="contacts-section">
         <div class="container">
           <h2 class="contacts-section__title">
             Як нас <span class="text-brand">знайти</span>
@@ -354,7 +366,91 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container"></div>
+      <div class="container">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="nav-link">
+              <a href="/" class="footer__logo">
+                <img src="images/logo.svg" alt="Logo beauty zone site" />
+              </a>
+            </div>
+            <ul class="footer__menu">
+              <li><a href="#about-section" class="link">Про нас</a></li>
+              <li><a href="#why-us-section" class="link">Чому ми</a></li>
+              <li><a href="#our-procedures" class="link">Наші процедури</a></li>
+              <li><a href="#contacts-section" class="link">Контакти</a></li>
+            </ul>
+          </nav>
+          <address class="footer__address">
+            <ul class="footer__address-list">
+              <li>
+                <a class="footer__address-link" href="tel:+38096000007"
+                  >+ 38 (096) 000 00 07</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__address-link"
+                  href="mailto:beautyzone@gmail.com"
+                  >beautyzone@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__address-link"
+                  href="https://maps.app.goo.gl/eCs9gjCixiegtwoD6"
+                  target="_blank"
+                  >Україна, м. Київ,<br />
+                  вул. Тараса Шевченка 5</a
+                >
+              </li>
+              <li>
+                <div class="footer__buttons button">
+                  <button type="button" class="button button__call">
+                    <a class="button__link" href="tel:+380960000007">
+                      <svg width="32" height="32" class="icon icon-telephone">
+                        <use href="/images/icons.svg#icon-telephone"></use>
+                      </svg>
+                    </a>
+                  </button>
+                  <button type="button" class="button button__facebook">
+                    <a
+                      class="button__link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                    >
+                      <svg width="32" height="32" class="icon icon-facebook">
+                        <use href="/images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </button>
+                  <button type="button" class="button button__instagram">
+                    <a
+                      class="button__link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                    >
+                      <svg width="32" height="32" class="icon icon-instagram">
+                        <use href="/images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <ul class="footer__politic">
+              <li>
+                <a class="footer__politic-link" href=""
+                  >Політика конфіденційності</a
+                >
+              </li>
+              <li>
+                <p class="footer__politic-text">&copy; 2022 Дані захищені</p>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

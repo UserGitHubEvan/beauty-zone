@@ -1,0 +1,131 @@
+.footer {
+  padding: 55px 0;
+  overflow: hidden;
+
+  background-image: url("../images/footer/bg-footer@1x.png");
+  background-color: var(--primary-color-dark-blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 193dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/footer/bg-footer@2x.png");
+    background-color: var(--primary-color-dark-blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -74px;
+      bottom: -126px;
+      width: 278px;
+      height: 213px;
+      background-image: url("../images/footer/bottles/bottles-footer@1x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 193dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../images/footer/bottles/bottles-footer@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-between;
+
+    .nav-link {
+      flex-grow: 1;
+    }
+  }
+
+  &__menu {
+    flex-grow: 1;
+  }
+
+  &__logo {
+    display: block;
+    width: 83px;
+    height: 42px;
+  }
+  &__menu {
+    .link {
+      color: var(--primary-color-white);
+      display: block;
+      margin-bottom: 15px;
+
+      &:hover {
+        color: var(--primary-color-blue);
+      }
+    }
+  }
+  &__address {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 50%;
+    justify-content: space-between;
+
+    &-link {
+      font-family: "robotoregular", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      display: block;
+      margin-bottom: 15px;
+      color: var(--primary-color-white);
+      transition: color 1s;
+
+      &:hover {
+        color: var(--primary-color-blue);
+      }
+    }
+  }
+  &__buttons {
+    flex-shrink: 0;
+    display: flex;
+    gap: 30px;
+
+    .icon {
+      fill: var(--primary-color-white);
+      transition: fill 1s;
+
+      &:hover {
+        fill: var(--primary-color-blue);
+      }
+    }
+  }
+  &__politic {
+    &-link {
+      display: block;
+      margin-bottom: 15px;
+      color: var(--primary-color-white);
+      transition: color 1s;
+
+      &:hover {
+        color: var(--primary-color-blue);
+      }
+    }
+    &-text {
+      font-family: "robotoregular", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--secondary-color-gray);
+    }
+  }
+}

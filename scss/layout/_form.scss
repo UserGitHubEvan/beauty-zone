@@ -1,6 +1,4 @@
-// .contacts-section {
 .form {
-  // background-color: var(--primary-color-dark-blue);
   background-image: url("../../images/contacts-section/bg-contacts-section.png");
   background-color: var(--primary-color-dark-blue);
   background-repeat: no-repeat;
@@ -69,11 +67,11 @@
     margin: 0 auto 8px;
     color: var(--primary-color-white);
     background-color: var(--primary-color-blue);
-    transition: background-color 0.5s;
+    transition: background-color 1s, color 1s;
 
     &:hover {
-      background-color: transparent;
-      border-color: var(--primary-color-white);
+      background-color: var(--primary-color-white);
+      color: var(--primary-color-dark-blue);
     }
   }
 

@@ -60,7 +60,7 @@
     transition: 1s background-color, 1s color;
 
     &:hover {
-      background-color: transparent;
+      background-color: var(--primary-color-white);
       color: var(--primary-color-dark-blue);
       border-color: var(--primary-color-blue);
     }
